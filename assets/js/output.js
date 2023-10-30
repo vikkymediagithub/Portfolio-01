@@ -17,3 +17,4 @@ cancelBtn.onclick = () => {
 window.onscroll = () => {
     this.scrollY > 20 ? menubar.classList.add("sticky") : menubar.classList.remove("sticky");
 }
+

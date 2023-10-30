@@ -11,7 +11,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -38,31 +37,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
 <body>
-   <!-- Sticky Navbar -->
-   <nav class="menubar">
-    <div class="contain">
-      <div class="logo"><a href="./index.html" class="a">Ff</a></div>
-      <ul class="menu-list"> 
-
-        <!-- Menu Icon Btn -->
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-        <li><a href="index.html" class="a">Home</a></li>
-        <li><a href="#mystory" class="a">My Story</a></li>
-        <li><a href="#mywork" class="a">My Work</a></li>
-        <li><a href="#mentorship" class="a">Mentorship</a></li>
-        <li><a href="#team" class="a">Team</a></li>
-        <li><a href="#resume" class="a">Resume</a></li>
-      </ul>
-
-      <!-- Menu Icon Btn -->
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
+  <!-- Start Header -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <!-- logo -->
+      <h1 class="logo me-auto me-lg-0"><a href="index.html" class="a">Ff</a></h1>
+      <!-- Start Navbar -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#mystory">My Story</a></li>
+          <li><a class="nav-link scrollto" href="#mywork">My Work</a></li>
+          <li><a class="nav-link scrollto" href="#mentorship">Mentorship</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- End Navbar -->
+      <a href="#" class="get-started-btn scrollto">Resume</a>
     </div>
-  </nav>
-  <!-- End Sticky Navbar -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
@@ -75,183 +87,210 @@
           <h2>I am very passionate about creating user-centered and Business oriented design </h2>
         </div>
       </div>
-      <div class="btn-grad">
+      <div class="btn-grad mt-5">
         <button><i class="fa-regular fa-share-from-square"></i> Lets Chat</button>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero Section -->
 
-  
-
+  <!-- Start Main -->
   <main id="main">
+    <!-- My Story -->
     
-  <section class="p-5" id="">
-    <div class="container py-5">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
-          <a href="index.html"><img src="./assets/img/my story/Group 6.png" alt="" class="img-fluid mb-4"></a>
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content aos-init aos-animate" >
-          <h1>My Story</h1>
-          <p>I embarked on my UI/UX design career journey in 2021, and I found a profound sense of fulfillment in it. For me, UI/UX Design represents a chance to make a meaningful impact on contribute to the growth and productivities of individuals and businesses I may never have the privilege of meeting face-to-face.</p>
-          <a href="#" class="btn btn-primary mt-3">Read More</a>
-        </div>
+    <div class="mystory container-fluid py-5" id="mystory">
+      <div class="container">
+          <!-- <div class="position-relative d-flex align-items-center justify-content-center">
+              <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">My Work</h1>
+              <h1 class="position-absolute text-uppercase text-primary">My Work</h1>
+          </div> -->
+          <div class="row align-items-center">
+              <div class="col-lg-5 pb-4 pb-lg-0" data-aos="fade-up">
+                  <img class="img-fluid rounded w-100" src="./assets/img/home/Group 6.png" alt="">
+              </div>
+              <div class="col-lg-7">
+                  <h3 class="mb-4" data-aos="fade-right">My story</h3>
+                  <p data-aos="fade-down">I embarked on my UI/UX design career journey in 2021, and I found a profound sense of fulfillment in it. For me, UI/UX Design represents a chance to make a meaningful impact on contribute to the growth and productivities of individuals and businesses I may never have the privilege of meeting face-to-face.</p>
+                  <div class="row mb-3" data-aos="fade-left">
+                      <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Kate Winslet</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">1 April 1990</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+012 345 6789</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">info@example.com</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">123 Street, New York, USA</span></h6></div>
+                      <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+                  </div>
+                  <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
+                  <a href="" class="btn btn-outline-primary">Learn More</a>
+              </div>
+          </div>
       </div>
+  </div>
+  <!-- End of My Story -->
+
+  <!-- Start My Work -->
+  <!-- Part 1 -->
+  <section id="mywork" class="mywork">
+    <div class="container py-5" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="pb-5 fw-bold">Featured Work</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <a href="index.html"><img src="./assets/img/shaapapp/Frame 128.png" alt="" class="img-fluid mb-4"></a>
+        </div>
+        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+          <h1>Shaap Mobile app</h1>
+          <p class="content aos-init aos-animate">SHAAP is a mobile application that enables users to quickly access delivery services. It connects delivery services with both their existing customers and potential customers.
+          Users can.</p>
+          <div class="btn-grad-1">
+            <button class="cta-button11">View the project</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-      <!-- ======= My Story Section ======= -->
-      <section id="features" class="features">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="row">
-            <div class="image col-lg-6" style='background-image: url("./assets/img/my story/Group 6.png"); width: 25%;' data-aos="fade-right"></div>
-            <div class="col-lg-6 justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="100">
-              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                <h1>My Story</h1>
-                <p style="color: #fff;">
-                  I embarked on my UI/UX design career journey in 2021, and I found a profound sense of fulfillment in it. For me, UI/UX Design represents a chance to make a meaningful impact on contribute to the growth and productivities of individuals and businesses I may never have the privilege of meeting face-to-face.
-                </p>
-                <div class="btn-grad">
-                  <button><i class="fa-regular fa-share-from-square"></i> Read More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-  
+  <!-- Part 2 -->
+  <section class="mywork" id="mywork">
+    <div class="container11"  >
+      <div class="hero-img" data-aos="fade-up">
+        <img src="./assets/img/shaapapp/bitville.png" alt="">
+      </div>
+      <div class="hero-content11" data-aos="fade-left">
+        <h2 class=".h2">Bitville website</h2>
+        <p class="passionate content aos-init aos-animate" style="word-wrap: wrap;  width: 70%;">A simple and intuitive website for Bitville Technologies,  an  IT consulting and software developments agency.</p>
+        <div class="btn-grad-1">
+          <button class="cta-button11">View the project</button>
         </div>
-      </section>
-      <!-- End  Section -->
+      </div>
+    </div>
+  </section>
 
-    <!-- ======= About Section ======= -->
-    <section id="mystory" class="mystory">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/my story/Group 6.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>My Story</h3>
-            <p class="fst-italic">
-              I embarked on my UI/UX design career journey in 2021, and I found a profound sense of fulfillment in it. For me, UI/UX Design represents a chance to make a meaningful impact on contribute to the growth and productivities of individuals and businesses I may never have the privilege of meeting face-to-face.
-            </p>
-            <!-- btn -->
-            <div>
-              <button class="btn btn-primary"><img src="./assets/img/Vector.png"> Read More</button>
-            </div>
+  <!-- Part 3 -->
+  <section class="mystory p-5" id="">
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <a href="index.html"><img src="./assets/img/shaapapp/Wish app.png" alt="" class="img-fluid mb-4"></a>
+        </div>
+        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+          <h1>WishApp</h1>
+          <p class="content aos-init aos-animate">"WishAPP is a mobile app that serves as a social support and e-commerce platform."</p>
+          <div class="btn-grad-1">
+            <button class="cta-button11">View the project</button>
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </section>
 
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Check our Team</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+  <!-- Part 4 -->
+  <section class="hero11" id="mystory">
+    <div class="container11"  >
+      <div class="hero-img" data-aos="fade-up">
+        <img src="./assets/img/shaapapp/Clearly.png" alt="">
       </div>
-    </section><!-- End Team Section -->
+        <div class="hero-content11" data-aos="fade-left">
+          <h2 class=".h2">Clearly App</h2>
+          <p class="passionate content aos-init aos-animate" style="word-wrap: wrap;  width: 70%;">Clearly App is a mobile application that is meant to promote inclusiveness and effective communication among deaf and mute people and people without disability</p>
+          <div class="btn-grad-1">
+            <button class="cta-button11">View the project</button>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- End My Work -->
 
-  </main><!-- End #main -->
+  <!-- Start Mentorship -->
+  <div class=" mentorship container-fluid pt-5" id="mentorship">
+    <div class="container">
+        <!-- <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Mentorship</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Mentorship</h1>
+        </div> -->
+        <div class="row">
+            <div class="col-lg-4 mb-5">
+                <div class="position-relative mb-4" data-aos="fade-up">
+                    <img class="img-fluid rounded w-100" src="./assets/img/mentorship/Rectangle 4.png" alt="">
+                    <div class="blog-date" data-aos="fade-left">
+                        <h4 class="font-weight-bold mb-n1">UX Design Haven Community</h4>
+                    </div>
+                </div>
+                <p class="font-weight-medium mb-4" data-aos="fade-right">I mange UX Design Haven is UI/UX community with a diverse group of designers at all levels, coming together to learn, share, and collaborate. We share resources and materials that useful and help for the community growth. we also organize tutorials, discussions, projects, and webinars to enhance our skills.</p>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="position-relative mb-4" data-aos="fade-up">
+                    <img class="img-fluid rounded w-100" src="./assets/img/mentorship/Rectangle 4 (1).png" alt="">
+                    <div class="blog-date" data-aos="fade-left">
+                        <h4 class="font-weight-bold mb-n1">Free Tutorials and mentorship </h4>
+                    </div>
+                </div>
+                <p class="font-weight-medium mb-4" data-aos="fade-right">I convene free tutorial for aspiring and beginners in UI/UX design. I mentor a number of designers who are interested in improving their knowledge and skill in design  </p>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="position-relative mb-4" data-aos="fade-up">
+                    <img class="img-fluid rounded w-100" src="./assets/img/mentorship/Rectangle 4 (2).png" alt="">
+                    <div class="blog-date" data-aos="fade-left">
+                        <h4 class="font-weight-bold mb-n1">Kids design Class</h4>
+                    </div>
+                </div>
+                <p class="font-weight-medium mb-4" data-aos="fade-right">One of my favorite things to do is to impact knowledge and skills to kids especially the the things i enjoy doing. i had the opportunity to train kids at AfriteQ Academy, Lagos. </p>
+            </div>
+        </div>
+        <div class="btn-grad" data-aos="fade-down">
+          <button class="cta-button11">Reach Out</button>
+        </div>
+    </div>
+  </div>
+  <!-- End Mentorship -->
+
+  <!-- Start Testimonial -->
+
+  <!-- End Testimonial -->
+
+
+    <!-- Need Help -->
+    <section class="text-center">
+      <div class="text-center">
+        <h2>Need a creative designer? you are in the right place</h2>
+        <div class="btn-grad text-center">
+          <button class="cta-button11">Let's talk</button>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
+  </main>
+  <!-- End #main -->
+
+  <!-- Start Footer -->
+
+  <!-- End Footer -->
 
   <!-- ======= Footer ======= -->
+  <!-- <footer id="footer" style="background: #000;">
+    <div class="container" >
+      <div class="d-flex justify-content-center mb-3">
+        <a class="text-white" href="#hero">Home</a>
+        <a class="text-white" href="#mystory">My Story</a>
+        <a class="text-white" href="#mywork">My Work</a>
+        <a class="text-white" href="#">holufunmilola@gmail.com</a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      </div>
+    </div>
+  </footer> -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6">
-            <!-- <div class="footer-nav">
-              <ul>
-                <li><a href="#hero" class="a">Home</a></li>
-                <li><a href="#mystory" class="a">My Story</a></li>
-                <li><a href="#mywork" class="a">My Work</a></li>
-                <li><a href="#portfolio" class="a">Portfolio</a></li>
-                <li><a href="#team" class="a">Team</a></li>
-              </ul>
-            </div> -->
             <div class="footer-info">
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -300,6 +339,9 @@
       }
     })
   </script>
+
+  <!-- MDB -->
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 
