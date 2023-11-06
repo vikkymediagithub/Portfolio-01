@@ -859,7 +859,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: whitesmoke;
+  /* background: whitesmoke; */
   min-height: 40px;
   margin-top: 74px;
 }
