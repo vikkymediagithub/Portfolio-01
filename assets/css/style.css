@@ -18,13 +18,20 @@ body {
   background: var(--bg-color);
 }
 
-a {
-  color: #ffc451;
+a{
   text-decoration: none;
 }
 
-a:hover {
-  color: #ffd584;
+h1 .a {
+  font-size: 32px;
+  width: 80%;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+  text-decoration: none;
+}
+
+.a:hover {
+  color: #00dbde;
   text-decoration: none;
 }
 
@@ -963,7 +970,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ffc451;
+  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
   color: #151515;
   text-decoration: none;
 }
@@ -1011,7 +1018,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #fc00ff;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1037,14 +1044,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
-  color: #151515;
+  background: #fc00ff;
+  color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ffcd6b;
+  background: #00dbde ;
 }
 
 #footer .copyright {
